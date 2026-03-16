@@ -1,0 +1,22 @@
+# ============================================================
+# content/my_profile.yaml
+# ============================================================
+# This is your student profile. Fill in your own
+# information, and update portfolio_config.yaml to point to it.
+# ============================================================
+
+name: "Ryan Maciejewski"
+tagline: "Aspiring Data Scientist"
+
+about: |
+  I'm a data science student at Michigan State University with a background in genetics. 
+  My work focuses on using statistics, machine learning, and data visualization to analyze 
+  various forms of data. In my projects, I have completed several data analysis projects 
+  using Python, R, SQL, and Git while working on problems such as demand forecasting, 
+  environmental data analysis, and demographic data. I'm interested in data analyst and data 
+  science roles where I can apply statistical modeling and data driven approaches to real world problems.
+
+# Contact information — remove any fields you prefer not to share
+email: "maciej21@msu.edu"
+#linkedin: "https://www.linkedin.com/in/zeke-the-wonder-dog"
+github: "https://github.com/RyanMaciejewski"
