@@ -44,4 +44,4 @@ results_impact: >
 
 repo_url: "https://github.com/RyanMaciejewski/CleanEnergyProject.git"
 notebook_url: "https://github.com/RyanMaciejewski/CleanEnergyProject/blob/main/notebooks/CleanEnergyProject(PlotlyMaps).ipynb"
-image_path: "/Users/ryanmaciejewski/Downloads/EnergyTotalCapacity.png"
+image_path: "img/EnergyTotalCapacity.png"
