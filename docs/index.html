@@ -105,7 +105,8 @@ science roles where I can apply statistical modeling and data driven approaches 
             <p>The results highlight clear geographic patterns and capacity differences  among energy sources across the United States. These insights support  better understanding of the current energy landscape and can inform future  planning, policy decisions, and resource allocation.
 </p>
           </div>
-        </details>
+        
+          
 
         <!-- Links to the GitHub repo and notebook -->
         <div class="project-links">
@@ -129,17 +130,17 @@ science roles where I can apply statistical modeling and data driven approaches 
       <!-- Project thumbnail image -->
       <div class="project-image-wrapper">
         <img
-          src="img/placeholder_project_2.png"
-          alt="Thumbnail for Spartan Football Crowd Cheer Analysis"
+          src="img/CapstoneDemandForecasting.png"
+          alt="Thumbnail for Capstone - Kellanova Demand Forecasting Project"
           class="project-image"
         />
       </div>
 
       <div class="project-body">
-        <h3 class="project-title">Spartan Football Crowd Cheer Analysis</h3>
+        <h3 class="project-title">Capstone - Kellanova Demand Forecasting Project</h3>
 
         <!-- Short summary written for a non-expert audience -->
-        <p class="project-summary">Analyzed audio and attendance data from Spartan Stadium to understand what game events drive the loudest crowd reactions. Results were used to help the athletics department optimize in-game entertainment and — personally — to determine the exact moments when I should run onto the field for maximum dramatic effect.
+        <p class="project-summary">This capstone project focused on building and evaluating demand forecasting  models for weekly point-of-sale sales data in collaboration with Kellanova.  Because the original data is protected under an NDA, only a generic copy  of the project using dummy data is shared. The project compares several  forecasting approaches, including SARIMAX, Prophet, NBEATS, NHits, LSTM,  XGBoost, Chronos2, TSMixer, LightGBM, and DeepAR. The analysis focuses on  forecast accuracy, provider-level performance, bias, volatility, and model  comparison across a 26-week hold-out period.
 </p>
 
         <!-- Tech stack as pill badges -->
@@ -147,13 +148,33 @@ science roles where I can apply statistical modeling and data driven approaches 
           
           <span class="tech-badge">Python</span>
           
+          <span class="tech-badge">numpy</span>
+          
           <span class="tech-badge">pandas</span>
           
-          <span class="tech-badge">seaborn</span>
+          <span class="tech-badge">matplotlib</span>
           
-          <span class="tech-badge">Plotly</span>
+          <span class="tech-badge">scikit-learn</span>
+          
+          <span class="tech-badge">statsmodels</span>
+          
+          <span class="tech-badge">Prophet</span>
+          
+          <span class="tech-badge">XGBoost</span>
+          
+          <span class="tech-badge">LightGBM</span>
+          
+          <span class="tech-badge">PyTorch</span>
+          
+          <span class="tech-badge">NeuralForecast</span>
+          
+          <span class="tech-badge">Darts</span>
+          
+          <span class="tech-badge">Chronos2</span>
           
           <span class="tech-badge">Jupyter Notebooks</span>
+          
+          <span class="tech-badge">Conda</span>
           
         </div>
 
@@ -163,32 +184,39 @@ science roles where I can apply statistical modeling and data driven approaches 
 
           <div class="detail-block">
             <h4>Problem</h4>
-            <p>Fan energy is contagious, but it is also unpredictable. The athletics department wanted to know which in-game events (touchdowns, turnovers, big defensive stops, walk-up music choices) produced the biggest crowd reactions — and whether the pattern differed by opponent, weather, or game time. As the mascot, I had strong professional interest in this question.
+            <p>This project addresses the challenge of forecasting weekly consumer demand  using historical point-of-sale data and trade-related features. The goal was  to identify models that could accurately predict future sales patterns across  multiple providers while accounting for trends, seasonality, promotional  activity, and trade distribution effects. Since the original data is protected  under an NDA, the shared version of the project uses dummy data to demonstrate  the structure, workflow, and modeling process without exposing protected  information.
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Approach</h4>
-            <p>Combined play-by-play game data with decibel readings from stadium microphones across three seasons (~36 home games). Engineered features for score differential, down-and-distance, quarter, temperature, and opponent rank. Produced interactive Plotly dashboards that let non-technical staff filter by season and event type to explore crowd response patterns on their own.
+            <p>The project cleaned and aggregated weekly sales data by provider, engineered  time-based and trade activity features, and tested multiple forecasting models  over a consistent 26-week hold-out period. Models were compared using  standardized metrics such as RMSE, MAPE, WMAPE, accuracy, bias, volatility  ratio, and standard deviation of absolute percentage error.
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Results &amp; Impact</h4>
-            <p>Defensive turnovers produced the loudest average crowd response — louder even than touchdowns — especially when MSU was trailing. Walk-up music selections in the 3rd quarter showed a statistically significant effect on cheer volume for games decided by fewer than 10 points. The athletics team used these findings to redesign the third-quarter entertainment package for the following season. I was given extra treats for my contributions.
+            <p>The results provided a structured comparison of several forecasting methods  and highlighted differences in model performance across providers. The project  showed that demand forecasting accuracy can vary depending on provider behavior,  sales volatility, and model type. By incorporating metrics beyond basic error  measurements, such as bias and volatility ratio, the analysis helped identify  models that were not only accurate on average but also more stable and reliable.  These findings can support future forecasting workflows, model selection, and  business planning for demand-driven decision making.
 </p>
           </div>
-        </details>
+        
+          
+          <div class="detail-block">
+            <h4>Data Note</h4>
+            <p>The original project data is protected under a non-disclosure agreement, so  the shared version of this project only includes dummy data. This allows the general project structure, notebooks, modeling workflow, environment setup, and  visualization outputs to be reviewed without exposing confidential data.
+</p>
+          </div>
+          
 
         <!-- Links to the GitHub repo and notebook -->
         <div class="project-links">
           
-          <a href="https://github.com/zeke-wonder-dog/spartan-cheer-analysis" target="_blank" rel="noopener" class="btn btn-repo">
+          <a href="..." target="_blank" rel="noopener" class="btn btn-repo">
             View Repo
           </a>
           
           
-          <a href="https://github.com/zeke-wonder-dog/spartan-cheer-analysis/blob/main/cheer_analysis.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
+          <a href="..." target="_blank" rel="noopener" class="btn btn-notebook">
             View Notebook
           </a>
           
