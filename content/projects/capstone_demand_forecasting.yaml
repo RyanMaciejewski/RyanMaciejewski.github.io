@@ -1,0 +1,70 @@
+# ============================================================
+# content/projects/capstone_demand_forecasting_project.yaml
+# ============================================================
+
+title: "Capstone - Kellanova Demand Forecasting Project"
+
+short_summary: >
+  This capstone project focused on building and evaluating demand forecasting 
+  models for weekly point-of-sale sales data in collaboration with Kellanova. 
+  Because the original data is protected under an NDA, only a generic copy 
+  of the project using dummy data is shared. The project compares several 
+  forecasting approaches, including SARIMAX, Prophet, NBEATS, NHits, LSTM, 
+  XGBoost, Chronos2, TSMixer, LightGBM, and DeepAR. The analysis focuses on 
+  forecast accuracy, provider-level performance, bias, volatility, and model 
+  comparison across a 26-week hold-out period.
+
+tech_stack:
+  - Python
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - statsmodels
+  - Prophet
+  - XGBoost
+  - LightGBM
+  - PyTorch
+  - NeuralForecast
+  - Darts
+  - Chronos2
+  - Jupyter Notebooks
+  - Conda
+
+problem_statement: >
+  This project addresses the challenge of forecasting weekly consumer demand 
+  using historical point-of-sale data and trade-related features. The goal was 
+  to identify models that could accurately predict future sales patterns across 
+  multiple providers while accounting for trends, seasonality, promotional 
+  activity, and trade distribution effects. Since the original data is protected 
+  under an NDA, the shared version of the project uses dummy data to demonstrate 
+  the structure, workflow, and modeling process without exposing protected 
+  information.
+
+approach: >
+  The project cleaned and aggregated weekly sales data by provider, engineered 
+  time-based and trade activity features, and tested multiple forecasting models 
+  over a consistent 26-week hold-out period. Models were compared using 
+  standardized metrics such as RMSE, MAPE, WMAPE, accuracy, bias, volatility 
+  ratio, and standard deviation of absolute percentage error.
+
+results_impact: >
+  The results provided a structured comparison of several forecasting methods 
+  and highlighted differences in model performance across providers. The project 
+  showed that demand forecasting accuracy can vary depending on provider behavior, 
+  sales volatility, and model type. By incorporating metrics beyond basic error 
+  measurements, such as bias and volatility ratio, the analysis helped identify 
+  models that were not only accurate on average but also more stable and reliable. 
+  These findings can support future forecasting workflows, model selection, and 
+  business planning for demand-driven decision making.
+
+data_note: >
+  The original project data is protected under a non-disclosure agreement, so 
+  the shared version of this project only includes dummy data. This allows the general
+  project structure, notebooks, modeling workflow, environment setup, and 
+  visualization outputs to be reviewed without exposing confidential data.
+
+
+repo_url: "..."
+notebook_url: "..."
+image_path: "img/CapstoneDemandForecasting.png"

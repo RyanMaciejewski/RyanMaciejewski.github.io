@@ -56,7 +56,13 @@
             <h4>Results &amp; Impact</h4>
             <p>{{ project.results_impact }}</p>
           </div>
-        </details>
+        
+          {% if project.data_note %}
+          <div class="detail-block">
+            <h4>Data Note</h4>
+            <p>{{ project.data_note }}</p>
+          </div>
+          {% endif %}
 
         <!-- Links to the GitHub repo and notebook -->
         <div class="project-links">
