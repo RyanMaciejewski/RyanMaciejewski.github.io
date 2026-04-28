@@ -127,6 +127,12 @@ img {
   object-fit: cover;
 }
 
+/* Special case: Chronos2 image should fit entirely without cropping */
+img[src*="Chronos2"] {
+  object-fit: contain;
+  background-color: #0F1117;
+}
+
 .project-body {
   padding: 1.25rem;
   display: flex;
