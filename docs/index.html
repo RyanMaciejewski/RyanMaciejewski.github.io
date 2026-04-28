@@ -54,17 +54,17 @@ science roles where I can apply statistical modeling and data driven approaches 
       <!-- Project thumbnail image -->
       <div class="project-image-wrapper">
         <img
-          src="img/placeholder_project_1.png"
-          alt="Thumbnail for Optimal Nap Spot Prediction Across Campus"
+          src="img/EnergyTotalCapacity.png"
+          alt="Thumbnail for Clean Energy Project"
           class="project-image"
         />
       </div>
 
       <div class="project-body">
-        <h3 class="project-title">Optimal Nap Spot Prediction Across Campus</h3>
+        <h3 class="project-title">Clean Energy Project</h3>
 
         <!-- Short summary written for a non-expert audience -->
-        <p class="project-summary">Built a model to identify the best nap locations on MSU&#39;s campus based on sunlight exposure, foot traffic, grass quality, and proximity to food smells. Findings have been peer-reviewed by three other dogs and were described as &#34;life-changing&#34; and &#34;very good.&#34;
+        <p class="project-summary">This project investigates where different type of energy sources are located  in the United States and their capacity in megawatts (MW). It uses the World  Resources Institute’s Global Power Plant Database and filters for U.S. facilities.  This project&#39;s main output is an interactive Plotly bubble map for the United  States with geographic clustering sorted by energy source. Other simple graphs  are included for a further analysis of energy trends in the United States.
 </p>
 
         <!-- Tech stack as pill badges -->
@@ -72,9 +72,11 @@ science roles where I can apply statistical modeling and data driven approaches 
           
           <span class="tech-badge">Python</span>
           
-          <span class="tech-badge">scikit-learn</span>
+          <span class="tech-badge">numpy</span>
           
           <span class="tech-badge">pandas</span>
+          
+          <span class="tech-badge">plotly</span>
           
           <span class="tech-badge">matplotlib</span>
           
@@ -88,19 +90,19 @@ science roles where I can apply statistical modeling and data driven approaches 
 
           <div class="detail-block">
             <h4>Problem</h4>
-            <p>Finding a good nap spot is harder than it looks. Campus is large, conditions change throughout the day, and the best patches of sun move. A mascot operating on intuition alone wastes valuable resting time — a problem that affects productivity, morale, and tail-wagging rates across the entire campus community.
+            <p>This project analyzes the geographic distribution and capacity of energy  sources across the United States using the Global Power Plant Database.  It aims to visualize patterns and trends in power generation through an  interactive Plotly bubble map and supporting analyses.
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Approach</h4>
-            <p>Collected location data across 47 candidate nap sites over a full academic semester. Features included average daily sunlight (hours), grass softness score (1–10, assessed manually), nearby food-cart proximity, and pedestrian traffic by hour. Trained a gradient boosting classifier to predict a site&#39;s &#34;nap quality&#34; rating and used SHAP values to explain which features mattered most.
+            <p>The approach involves cleaning and filtering the Global Power Plant Database  to isolate U.S. facilities and relevant variables. The data is then transformed  and visualized using Plotly to create an interactive bubble map, along with  additional plots to analyze trends in energy capacity and distribution.
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Results &amp; Impact</h4>
-            <p>The model achieved 89% accuracy on held-out test sites. Sunlight duration and grass softness were the top two predictive features, while proximity to the student union food court provided a meaningful but secondary boost. A ranked list of top-10 nap sites was distributed to the campus dog community and has since been downloaded 847 times.
+            <p>The results highlight clear geographic patterns and capacity differences  among energy sources across the United States. These insights support  better understanding of the current energy landscape and can inform future  planning, policy decisions, and resource allocation.
 </p>
           </div>
         </details>
@@ -108,12 +110,12 @@ science roles where I can apply statistical modeling and data driven approaches 
         <!-- Links to the GitHub repo and notebook -->
         <div class="project-links">
           
-          <a href="https://github.com/zeke-wonder-dog/nap-spot-predictor" target="_blank" rel="noopener" class="btn btn-repo">
+          <a href="https://github.com/RyanMaciejewski/CleanEnergyProject.git" target="_blank" rel="noopener" class="btn btn-repo">
             View Repo
           </a>
           
           
-          <a href="https://github.com/zeke-wonder-dog/nap-spot-predictor/blob/main/analysis.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
+          <a href="https://github.com/RyanMaciejewski/CleanEnergyProject/blob/main/notebooks/CleanEnergyProject(PlotlyMaps).ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
             View Notebook
           </a>
           
