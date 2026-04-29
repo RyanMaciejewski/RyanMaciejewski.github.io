@@ -7,8 +7,8 @@ title: "Capstone - Kellanova Demand Forecasting Project"
 short_summary: >
   This capstone project focused on building and evaluating demand forecasting 
   models for weekly point-of-sale sales data in collaboration with Kellanova. 
-  Because the original data is protected under an NDA, only a generic copy 
-  of the project using dummy data is shared. The project compares several 
+  Because the original data is protected under an NDA, only an abstracted copy 
+  of the project using dummy data can be shared. The project compares several 
   forecasting approaches, including SARIMAX, Prophet, NBEATS, NHits, LSTM, 
   XGBoost, Chronos2, TSMixer, LightGBM, and DeepAR. The analysis focuses on 
   forecast accuracy, provider-level performance, bias, volatility, and model 
@@ -60,11 +60,10 @@ results_impact: >
 
 data_note: >
   The original project data is protected under a non-disclosure agreement, so 
-  the shared version of this project only includes dummy data. This allows the general
-  project structure, notebooks, modeling workflow, environment setup, and 
-  visualization outputs to be reviewed without exposing confidential data.
+  the shared version of this project is modified and only includes dummy data. 
+  Please reach out if you would like to discuss the project in more detail or 
+  recieve a proof of concept copy of the project.
 
-
-repo_url: "..."
-notebook_url: "..."
+#repo_url: "..."
+#notebook_url: "..."
 image_path: "img/Chronos2_performance_summary.png"
