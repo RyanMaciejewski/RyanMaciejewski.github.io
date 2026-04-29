@@ -1,0 +1,56 @@
+# ============================================================
+# content/projects/sakila_sql_project.yaml
+# ============================================================
+
+title: "Sakila SQL Revenue Analysis"
+
+short_summary: >
+  This project analyzes rental revenue patterns using the Sakila
+  database. It was adapted from a course project and revised into a standalone
+  portfolio analysis. The analysis connects payment, rental, inventory, film, and
+  category tables to evaluate which film genres generate the most revenue
+  and how genre performance changes over time. The main outputs include
+  SQL-based revenue summaries, monthly genre rankings, validation checks,
+  an EXPLAIN query performance review, and a stakeholder-ready report table
+  with a supporting visualization.
+
+tech_stack:
+  - Python
+  - pandas
+  - SQL
+  - MySQL
+  - SQLAlchemy
+  - matplotlib
+  - Jupyter Notebooks
+  - Docker
+
+problem_statement: >
+  This project investigates how different film genres contribute to rental
+  revenue in the Sakila database. The goal is to identify top performing
+  genres, compare revenue trends across monthly periods, and create a clear
+  report that could support business decisions for a store manager or
+  marketing analyst.
+
+approach: >
+  The project begins by connecting Python to a Dockerized MySQL Sakila
+  database using SQLAlchemy. Multi table SQL joins are used to connect
+  payment records with rentals, inventory, films, and categories. The
+  analysis then applies grouped aggregations, HAVING filters, common table
+  expressions, and window functions to summarize genre revenue, calculate
+  monthly revenue share, and rank genres within each month. Validation
+  queries are included throughout the notebook to check row counts,
+  aggregation results, and ranking logic. An EXPLAIN query is also used to
+  review query performance and understand join behavior.
+
+results_impact: >
+  The analysis identifies which film genres contribute the most revenue and
+  shows how genre performance changes by month. The final report table
+  provides monthly revenue, percent of monthly revenue, and revenue rank by
+  genre, making the results easier to interpret for business decision-making.
+  The project demonstrates practical SQL skills including joins, aggregation,
+  CTEs, window functions, validation, and basic performance review in a
+  business analytics context.
+
+repo_url: "https://github.com/RyanMaciejewski/sql-sakila-business-analysis.git"
+notebook_url: "https://github.com/RyanMaciejewski/sql-sakila-business-analysis/blob/main/sakila_sql_revenue_analysis.ipynb"
+image_path: "img/sakila_sql_revenue_analysis.png"

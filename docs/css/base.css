@@ -111,9 +111,10 @@ img {
   transition: box-shadow 0.2s ease;
 }
 
-/* Special case: Allow overflow for Chronos2 and NYC311 */
+/* Special case: Allow overflow for Chronos2, NYC311, and Sakila SQL */
 .project-card:has(img[src*="Chronos2"]),
-.project-card:has(img[src*="nyc311_project"]) {
+.project-card:has(img[src*="nyc311_project"]),
+.project-card:has(img[src*="sakila"]) {
   overflow: visible;
 }
 
@@ -131,9 +132,10 @@ img {
   justify-content: center;
 }
 
-/* Special case: Allow full image display for Chronos2 and NYC311 */
+/* Special case: Allow full image display for Chronos2, NYC311, and Sakila SQL */
 .project-image-wrapper:has(img[src*="Chronos2"]),
-.project-image-wrapper:has(img[src*="nyc311_project"]) {
+.project-image-wrapper:has(img[src*="nyc311_project"]),
+.project-image-wrapper:has(img[src*="sakila"]) {
   background-color: #121314;
   border-radius: 10px 10px 0 0;
 }
@@ -152,6 +154,15 @@ img[src*="Chronos2"] {
 
 /* Special case: NYC311 image should fit entirely without cropping */
 img[src*="nyc311_project"] {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Special case: Sakila SQL image should fit entirely without cropping */
+img[src*="sakila"] {
   width: auto;
   height: auto;
   max-width: 100%;

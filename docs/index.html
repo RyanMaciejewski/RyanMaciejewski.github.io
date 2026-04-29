@@ -35,12 +35,12 @@
 <!-- ===== About section ===== -->
 <section id="about" class="section about-section">
   <h2>About Me</h2>
-  <div class="about-text"><p>I'm a data science student at Michigan State University with a background in genetics. 
+  <div class="about-text"><p>I'm a data science student at Michigan State University with a bachelor's degree in Genomics and Molecular Genetics. 
 My work focuses on using statistics, machine learning, and data visualization to analyze 
-various forms of data. In my projects, I have completed several data analysis projects 
-using Python, R, SQL, and Git while working on problems such as demand forecasting, 
-environmental data analysis, and demographic data. I'm interested in data analyst and data 
-science roles where I can apply statistical modeling and data driven approaches to real world problems.</p></div>
+various forms of data. I have experience with Python, R, SQL, Git, statistical modeling, machine learning, 
+and data visualization. My projects have focused on areas such as demand forecasting, business analytics, environmental data analysis, 
+genomics, and demographic data analysis.I'm interested in data analyst and data science roles where 
+I can apply statistical modeling and data driven approaches to real world problems.</p></div>
 </section>
 
 <!-- ===== Projects section ===== -->
@@ -231,13 +231,13 @@ science roles where I can apply statistical modeling and data driven approaches 
       <div class="project-image-wrapper">
         <img
           src="img/nyc311_project.png"
-          alt="Thumbnail for NYC 311 Service Request Analysis and Modeling Project"
+          alt="Thumbnail for AWS Cloud Computing - NYC 311 Service Request Analysis and Modeling Project"
           class="project-image"
         />
       </div>
 
       <div class="project-body">
-        <h3 class="project-title">NYC 311 Service Request Analysis and Modeling Project</h3>
+        <h3 class="project-title">AWS Cloud Computing - NYC 311 Service Request Analysis and Modeling Project</h3>
 
         <!-- Short summary written for a non-expert audience -->
         <p class="project-summary">This project analyzes NYC 311 service requests to understand complaint patterns and predict the expected time to resolution. It uses a  modeling dataset derived from NYC Open Data and explores how agency, borough, complaint type, ZIP code, and time based features relate to `days_to_close`. The main outputs are exploratory analysis, a scikit-learn regression model, and a SageMaker Linear Learner workflow.
@@ -247,6 +247,8 @@ science roles where I can apply statistical modeling and data driven approaches 
         <div class="tech-stack">
           
           <span class="tech-badge">Python</span>
+          
+          <span class="tech-badge">AWS</span>
           
           <span class="tech-badge">pandas</span>
           
@@ -295,6 +297,86 @@ science roles where I can apply statistical modeling and data driven approaches 
           
           
           <a href="https://github.com/RyanMaciejewski/aws-nyc311-maciej21/blob/main/notebooks/modeling_train_and_eval.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
+            View Notebook
+          </a>
+          
+        </div>
+      </div>
+
+    </article>
+    
+    <article class="project-card">
+
+      <!-- Project thumbnail image -->
+      <div class="project-image-wrapper">
+        <img
+          src="img/sakila_sql_revenue_analysis.png"
+          alt="Thumbnail for Sakila SQL Revenue Analysis"
+          class="project-image"
+        />
+      </div>
+
+      <div class="project-body">
+        <h3 class="project-title">Sakila SQL Revenue Analysis</h3>
+
+        <!-- Short summary written for a non-expert audience -->
+        <p class="project-summary">This project analyzes rental revenue patterns using the Sakila database. It was adapted from a course project and revised into a standalone portfolio analysis. The analysis connects payment, rental, inventory, film, and category tables to evaluate which film genres generate the most revenue and how genre performance changes over time. The main outputs include SQL-based revenue summaries, monthly genre rankings, validation checks, an EXPLAIN query performance review, and a stakeholder-ready report table with a supporting visualization.
+</p>
+
+        <!-- Tech stack as pill badges -->
+        <div class="tech-stack">
+          
+          <span class="tech-badge">Python</span>
+          
+          <span class="tech-badge">pandas</span>
+          
+          <span class="tech-badge">SQL</span>
+          
+          <span class="tech-badge">MySQL</span>
+          
+          <span class="tech-badge">SQLAlchemy</span>
+          
+          <span class="tech-badge">matplotlib</span>
+          
+          <span class="tech-badge">Jupyter Notebooks</span>
+          
+          <span class="tech-badge">Docker</span>
+          
+        </div>
+
+        <!-- Collapsible details (problem / approach / results) -->
+        <details class="project-details">
+          <summary>More details</summary>
+
+          <div class="detail-block">
+            <h4>Problem</h4>
+            <p>This project investigates how different film genres contribute to rental revenue in the Sakila database. The goal is to identify top performing genres, compare revenue trends across monthly periods, and create a clear report that could support business decisions for a store manager or marketing analyst.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Approach</h4>
+            <p>The project begins by connecting Python to a Dockerized MySQL Sakila database using SQLAlchemy. Multi table SQL joins are used to connect payment records with rentals, inventory, films, and categories. The analysis then applies grouped aggregations, HAVING filters, common table expressions, and window functions to summarize genre revenue, calculate monthly revenue share, and rank genres within each month. Validation queries are included throughout the notebook to check row counts, aggregation results, and ranking logic. An EXPLAIN query is also used to review query performance and understand join behavior.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Results &amp; Impact</h4>
+            <p>The analysis identifies which film genres contribute the most revenue and shows how genre performance changes by month. The final report table provides monthly revenue, percent of monthly revenue, and revenue rank by genre, making the results easier to interpret for business decision-making. The project demonstrates practical SQL skills including joins, aggregation, CTEs, window functions, validation, and basic performance review in a business analytics context.
+</p>
+          </div>
+        
+          
+
+        <!-- Links to the GitHub repo and notebook -->
+        <div class="project-links">
+          
+          <a href="https://github.com/RyanMaciejewski/sql-sakila-business-analysis.git" target="_blank" rel="noopener" class="btn btn-repo">
+            View Repo
+          </a>
+          
+          
+          <a href="https://github.com/RyanMaciejewski/sql-sakila-business-analysis/blob/main/sakila_sql_revenue_analysis.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
             View Notebook
           </a>
           
