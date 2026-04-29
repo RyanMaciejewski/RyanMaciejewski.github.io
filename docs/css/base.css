@@ -111,6 +111,12 @@ img {
   transition: box-shadow 0.2s ease;
 }
 
+/* Special case: Allow overflow for Chronos2 and NYC311 */
+.project-card:has(img[src*="Chronos2"]),
+.project-card:has(img[src*="nyc311_project"]) {
+  overflow: visible;
+}
+
 .project-card:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);
 }
@@ -119,6 +125,17 @@ img {
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Special case: Allow full image display for Chronos2 and NYC311 */
+.project-image-wrapper:has(img[src*="Chronos2"]),
+.project-image-wrapper:has(img[src*="nyc311_project"]) {
+  background-color: #121314;
+  border-radius: 10px 10px 0 0;
 }
 
 .project-image {
@@ -131,6 +148,15 @@ img {
 img[src*="Chronos2"] {
   object-fit: contain;
   background-color: #0F1117;
+}
+
+/* Special case: NYC311 image should fit entirely without cropping */
+img[src*="nyc311_project"] {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .project-body {

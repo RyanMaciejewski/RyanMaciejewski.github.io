@@ -1,0 +1,50 @@
+# ============================================================
+# content/projects/nyc311_service_request_project.md
+# ============================================================
+
+title: "NYC 311 Service Request Analysis and Modeling Project"
+
+short_summary: >
+  This project analyzes NYC 311 service requests to understand complaint
+  patterns and predict the expected time to resolution. It uses a 
+  modeling dataset derived from NYC Open Data and explores how agency,
+  borough, complaint type, ZIP code, and time based features relate to
+  `days_to_close`. The main outputs are exploratory analysis,
+  a scikit-learn regression model, and a SageMaker Linear Learner workflow.
+
+tech_stack:
+  - Python
+  - AWS
+  - pandas
+  - numpy
+  - scikit-learn
+  - boto3
+  - SageMaker
+  - Jupyter Notebooks
+
+problem_statement: >
+  This project investigates which complaint and context features help explain
+  how long NYC 311 complaints take to close. The goal is to understand the
+  distribution of resolution times and build models that estimate
+  `days_to_close` for stakeholder analysis.
+
+approach: >
+  The project begins by validating the raw complaint and agency data, then
+  builds a modeling table with complaint, geography, and time based features.
+  The notebooks explore the target distribution, split the data into train and
+  test sets, and compare two modeling workflows: a scikit-learn random forest
+  regressor and a SageMaker Linear Learner regression pipeline. Categorical
+  variables are encoded, missing values are handled, and model performance is
+  evaluated with MAE, RMSE, and R^2.
+
+results_impact: >
+  The analysis shows that `days_to_close` is highly skewed toward immediate
+  closures, with most complaints resolved on day 0 and a long tail of slower
+  cases. The random forest model and the SageMaker Linear Learner both produce
+  useful predictions, with the random forest performing best overall. These
+  results provide a practical summary of complaint resolution patterns and a
+  foundation for future modeling improvements.
+
+repo_url: "https://github.com/RyanMaciejewski/aws-nyc311-maciej21.git"
+notebook_url: "https://github.com/RyanMaciejewski/aws-nyc311-maciej21/blob/main/notebooks/modeling_train_and_eval.ipynb"
+image_path: "img/nyc311_project.png"

@@ -16,6 +16,7 @@ student_file: content/my_profile.yaml
 projects:
   - content/projects/clean_energy_project.yaml
   - content/projects/capstone_demand_forecasting.yaml
+  - content/projects/aws_nyc311_project.yaml
 
 # --- Theme ---
 # Built-in options: "light", "dark", "msu-light", "msu-dark"
